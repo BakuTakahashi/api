@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="contents">
+        <h1>Weather App</h1>
+
+        <div class="city">
+
+            <label><input type="radio" id="city" name="city" value="sapporo">札幌</label>
+            <label><input type="radio" id="city" name="city" value="tokyo">東京</label>
+            <label><input type="radio" id="city" name="city" value="fukuoka">福岡</label>
+            <label><input type="radio" id="city" name="city" value="okinawa">沖縄</label>
+            <label><input type="radio" id="city" name="city" value="Washington,D.C.">ワシントン 🇺🇸 </label>
+            <label><input type="radio" id="city" name="city" value="oymyakon">オイミャコン 🇷🇺 </label>
+            <label><input type="radio" id="city" name="city" value="djibouti">ジブチ共和国 🇩🇯 </label>
+        </div>
+
+        <div class="button">
+            <button id="click"><div class="click">お天気チェック</div></button>
+            <button id="reset"><div class="click">リセット</div></button>
+        </div>
+
+
+        <div class="weatherMain">
+            <h2>現在の天気は？</h2>
+            <div><span id="weather" class="bold"></span></div>
+            <div><span id="weatherMark" class="bold"> </span></div>
+            <p id="icon"></p>
+        </div>
+
+        <div>気温 <span id="temp" class="bold"></span> ℃</div>
+        <div>湿度 <span id="humidity" class="bold"></span> ％</div>
+
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
+
