@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $("#click").on('click' ,async function(){
         const city = $('input[name="city"]:checked').val();
-        const myApi = '0a5ea4492af408582dd019a84a1e5085';
+        const myApi = '';
 
         const rawData = await fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&lang=ja&appid=" + myApi);
         const data = await rawData.json();
